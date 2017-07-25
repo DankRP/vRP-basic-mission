@@ -45,6 +45,8 @@ function task_mission()
                       vRPclient.notify(player,{glang.money.received({v.reward})})
                     end
                   end)
+				else
+                    vRPclient.notify(player,{"~r~You need a repair kit!"})
                 end
               end,
               position = v.positions[math.random(1,#v.positions+1)]
@@ -102,6 +104,8 @@ function task_mission()
                       vRP.nextMissionStep({player})
                     end
                   end
+				else
+                    vRPclient.notify(player,{"~r~Something is missing!"})
                 end
               end
             end,
@@ -261,6 +265,8 @@ function task_mission()
                       vRPclient.notify(player,{"He is in! Take him to the next hospital!"})
                     end
                   end)
+				else
+                    vRPclient.notify(player,{"You need a medkit!"})
                 end
               end,
               position = v.positions[math.random(1,#v.positions+1)]
