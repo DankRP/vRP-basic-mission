@@ -20,7 +20,7 @@ function task_mission()
     for l,w in pairs(users) do
       local user_id = w
       local player = vRP.getUserSource({user_id})
-      if not vRP.hasMission({player}) and vRP.hasGroup({user_id,"onservice"}) then
+      if not vRP.hasMission({player}) then
         if math.random(1,v.chance+1) == 1 then -- chance check
           -- build mission
           local mdata = {}
@@ -66,7 +66,7 @@ function task_mission()
     for l,w in pairs(users) do
       local user_id = w
       local player = vRP.getUserSource({user_id})
-      if not vRP.hasMission({player}) and vRP.hasGroup({user_id,"onservice"}) then
+      if not vRP.hasMission({player}) then
         if math.random(1,v.chance+1) == 1 then -- chance check
           -- build mission
           local mdata = {}
@@ -133,7 +133,7 @@ function task_mission()
       local user_id = w
       local player = vRP.getUserSource({user_id})
 	  	  
-      if not vRP.hasMission({player}) and vRP.hasGroup({user_id,"onservice"}) then
+      if not vRP.hasMission({player}) then
         if math.random(1,v.chance+1) == 1 then -- chance check
           -- build mission
           local mdata = {}
@@ -187,7 +187,7 @@ function task_mission()
 	  local shotgun = math.random(-1,2)
 	  local smg = math.random(-2,2)
 	  	  
-      if not vRP.hasMission({player}) and vRP.hasGroup({user_id,"onservice"}) then
+      if not vRP.hasMission({player}) then
         if math.random(1,v.chance+1) == 1 then -- chance check
           -- build mission
           local mdata = {}
@@ -232,7 +232,7 @@ function task_mission()
     for l,w in pairs(users) do
       local user_id = w
       local player = vRP.getUserSource({user_id})
-      if not vRP.hasMission({player}) and vRP.hasGroup({user_id,"onservice"}) then
+      if not vRP.hasMission({player}) then
         if math.random(1,v.chance+1) == 1 then -- chance check
           -- build mission
           local mdata = {}
@@ -282,7 +282,7 @@ function task_mission()
     for l,w in pairs(users) do
       local user_id = w
       local player = vRP.getUserSource({user_id})
-      if not vRP.hasMission({player}) and vRP.hasGroup({user_id,"onservice"}) then
+      if not vRP.hasMission({player}) then
         if math.random(1,v.chance+1) == 1 then -- chance check
           -- build mission
           local mdata = {}
@@ -329,7 +329,7 @@ function task_mission()
     for l,w in pairs(users) do
       local user_id = w
       local player = vRP.getUserSource({user_id})
-      if not vRP.hasMission({player}) and vRP.hasGroup({user_id,"onservice"}) then
+      if not vRP.hasMission({player}) then
         if math.random(1,v.chance+1) == 1 then -- chance check
           -- build mission
           local mdata = {}
