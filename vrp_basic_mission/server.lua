@@ -157,7 +157,7 @@ function task_mission()
                         vRPclient.notify(player,{lang.own_veh()})
 				      else
                         Mclient.freezePedVehicle(player,{true})
-				        vRPclient.deleteVehiclePedIsIn(player,{})
+				        Mclient.deleteVehiclePedIsIn(player,{})
 					    vRP.giveInventoryItem({user_id,"dirty_money",reward,true})
                         vRP.nextMissionStep({player})
 					  end
