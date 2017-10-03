@@ -2,6 +2,14 @@
 vRPmt = {}
 Tunnel.bindInterface("vRP_basic_mission",vRPmt)
 
+function vRPmt.isPlayerInVehicleModel(model)
+  if (IsVehicleModel(GetVehiclePedIsUsing(GetPlayerPed(-1)), GetHashKey(model, _r))) then -- just a function you can use to see if your player is in a taxi or any other car model (use the tunnel)
+    return true
+  else
+    return false
+  end
+end
+
 function vRPmt.isInAnyVehicle()
   if IsPedInAnyVehicle(GetPlayerPed(-1)) then
 	return true
